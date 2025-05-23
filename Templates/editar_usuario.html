@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Editar Usuario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f0f2f5;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input[type=text], input[type=email], input[type=password] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Editar Usuario</h2>
+  <form method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" required value="{{ usuario[1] }}" />
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" id="apellido" required value="{{ usuario[2] }}" />
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" name="email" id="email" required value="{{ usuario[3] }}" />
+
+    <label for="password">Contraseña:</label>
+    <input type="password" name="password" id="password" required value="{{ usuario[4] }}" />
+
+    <button type="submit">Actualizar</button>
+  </form>
+</body>
+</html>
