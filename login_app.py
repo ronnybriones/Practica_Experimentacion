@@ -63,3 +63,12 @@ def delete(id):
 if __name__ == '__main__':
     app.run(port = 3000, debug = True)
     
+print("""
+                ██████╗ ██████╗ 
+                ██╔═══╝ ██╔══██╗ 
+                █████╗  ██████╔╝ 
+                ██╔══╝  ██╔══██╗  
+                ██████╗ ██║  ██║  
+                ╚═════╝ ╚═╝  ╚═╝ 
+                """)
+print("Este código está hecho por Briones Sornoza Ronny Yonaiquer, Alias ElRonas \n¡Hasta Luego! \n")
